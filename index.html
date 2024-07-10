@@ -1,6 +1,7 @@
 <style>
     :root {
-        --sky: #71b0fb;
+        --sky: #c2e1f5;
+        --sky1: #d0e7f7;
         --sun: #fbcce3;
         --cloud: #ffffff;
         --basket: #d1c1a5;
@@ -68,7 +69,7 @@
         left: 50%;
         margin-top: 250px;
         margin-left: -10px;
-        animation: balloon infinite 3s 0.5s;
+        animation: balloon infinite 10s 0.5s;
     }
 
     .balloon {
@@ -181,7 +182,7 @@
         }
 
         50% {
-            transform: translateY(-10px);
+            transform: translateY(-50px);
         }
     }
 
@@ -189,31 +190,24 @@
 
         0%,
         100% {
-            transform: translateY(0);
+            transform: translateY(-1000);
         }
 
 
         50% {
-            transform: translateY(-10px);
+            transform: translateY(-500px);
         }
     }
 </style>>
 
 <body>
-
-    <div class="center-block">
-        <div class="circle-big"></div>
-        <div class="circle"></div>
-
-        <div class="image1"></div>
-        <span class="anim">
-            <div class="image"></div>
-        </span>
+    <div class="bg">
+        <div class="bg-1"></div>
+        <div class="bg-2"></div>
+        <div class="bg-1"></div>
+        <div class="bg-2"></div>
     </div>
     <div class="sun"></div>
-    <div class="cloud" style="left:50%; top:15%;"></div>
-    <div class="cloud"></div>
-    <div class="cloud" style="left:80%; top:5%;"></div>
     <div class="hot-air-balloon">
         <div class="balloon"><span class="balloon-block"></span></div>
 
@@ -226,15 +220,50 @@
         <div class="basket"></div>
     </div>
 
-    <div class="hot-air-balloon" style="left:60%; top:45%;transform: scale(.5);">
+    <div class="hot-air-balloon" style="left:60%; top:75%;transform: scale(.5);">
         <div class="balloon"><span class="balloon-block"></span></div>
 
         <div class="basket"></div>
     </div>
+    <div class="center-block">
+        <div class="circle-big"></div>
+        <div class="circle"></div>
+
+        <div class="image1"></div>
+        <span class="anim">
+            <div class="image"></div>
+        </span>
+    </div>
+
+    <div class="cloud" style="left:50%; top:15%;"></div>
+    <div class="cloud"></div>
+    <div class="cloud" style="left:80%; top:5%;"></div>
+
 </body>
 
 
 <style>
+    .bg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-1 {
+        height: 100%;
+        background-color: var(--sky);
+        width: 24%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .bg-2 {
+        height: 100%;
+        background-color: var(--sky1);
+        width: 24%;
+        height: 100%;
+        display: inline-block;
+    }
+
     .center-block {
         width: 80%;
         height: 45%;
@@ -267,7 +296,7 @@
     }
 
     .anim {
-        animation: cloud infinite 2s;
+        animation: cloud infinite 3s;
         position: absolute;
     }
 
