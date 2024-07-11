@@ -1,3 +1,10 @@
+<head>
+        <meta property="og:title" content="Aadish's 1st Birthday" />
+        <meta property="og:description" content="You are inivited to Aadhish's first Birthday" />
+        <meta property="og:url" content="aadish-bday.vercel.app" />
+        <meta property="og:image" content="https://aadish-bday.vercel.app/wp-thumbnil.jpeg" />
+
+</head>
 <!-- https://codepen.io/antonioescudero/pen/zrxGve -->
 <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 <style>
@@ -372,7 +379,6 @@
             margin-left: -1000px;
         }
     }
-   
 </style>
 
 <body>
@@ -424,10 +430,8 @@
             <div style="text-align: center;">
                 <add-to-calendar-button name="Aadish's Birthday" options="'Apple','Google'"
                     location="Deccan Serai Grande Hotel, Hyderabad" startDate="2024-07-15" endDate="2024-07-15"
-                    startTime="19:00" endTime="23:30" timeZone="Asia/Kolkata"
-                     style="display: inline-block;" listStyle="overlay"
-                    buttonStyle="text"
-                    hideBackground></add-to-calendar-button>
+                    startTime="19:00" endTime="23:30" timeZone="Asia/Kolkata" style="display: inline-block;"
+                    listStyle="dropdown-static" buttonStyle="text"></add-to-calendar-button>
             </div>
             <br />
             <div>
@@ -457,6 +461,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
 <style>
+    #atcb-bgoverlay {
+        display: none;
+    }
+
     .gloria-hallelujah-regular {
         font-family: "Righteous", sans-serif;
         font-weight: 400;
@@ -497,7 +505,6 @@
         top: 50%;
         transform: translate(-50%, -50%);
         left: 50%;
-        overflow: hidden;
     }
 
     .circle {
