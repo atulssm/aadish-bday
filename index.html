@@ -1,8 +1,8 @@
 <head>
-        <meta property="og:title" content="Aadish's 1st Birthday" />
-        <meta property="og:description" content="You are inivited to Aadhish's first Birthday" />
-        <meta property="og:url" content="aadish-bday.vercel.app" />
-        <meta property="og:image" content="https://aadish-bday.vercel.app/wp-thumbnil.jpeg" />
+    <meta property="og:title" content="Aadish's 1st Birthday" />
+    <meta property="og:description" content="You are inivited to Aadhish's first Birthday" />
+    <meta property="og:url" content="aadish-bday.vercel.app" />
+    <meta property="og:image" content="https://aadish-bday.vercel.app/wp-thumbnil.jpeg" />
 
 </head>
 <!-- https://codepen.io/antonioescudero/pen/zrxGve -->
@@ -17,6 +17,22 @@
         --balloonRope: #b33e64;
         --balloonColor1: #d7608d;
         --balloonColor2: #ffffff;
+        --accent-color: #1e90ff;
+        --wrapper-padding: 1px;
+        --buttonslist-gap: 5px;
+        --btn-background: #f5f5f5;
+        --btn-hover-background: #fff;
+        --btn-border: #d2d2d2;
+        --btn-border-radius: 500px;
+        --btn-padding-x: 1.3em;
+        --btn-padding-y: .65em;
+        --btn-font-weight: 600;
+        --btn-text: #333;
+        --btn-hover-text: #000;
+        --btn-shadow: rgba(0 0 0 / 15%) 0 4px 10px -2px, rgba(0 0 0 / 20%) 0 2px 3px -1px;
+        --btn-hover-shadow: rgba(0 0 0 / 30%) 0 5px 15px -3px, rgba(0 0 0 / 25%) 0 3px 5px -2px;
+        --btn-active-shadow: rgba(0 0 0 / 35%) 0 6px 15px -3px, rgba(0 0 0 / 25%) 0 4px 6px -2px;
+        --font: "Raleway", sans-serif !important;
     }
 
     * {
@@ -424,8 +440,9 @@
             <br />
             <div class="pacifico-regular" style="font-size:150px">Aadish's</div>
             <div class="pacifico-regular" style="font-size:72px;color: #bd2e2e;margin-top: -30px;">First Birthday</div>
-            <div style="font-size: 5vw; display: flex; gap:3vw;    align-items: center;" class="gloria-hallelujah-regular">
-               <span> Monday</span> <span style="font-size:8vw;color: #af8b3c;border-left: 3px solid #af8b3c;
+            <div style="font-size: 5vw; display: flex; gap:3vw;    align-items: center;"
+                class="gloria-hallelujah-regular">
+                <span> Monday</span> <span style="font-size:8vw;color: #af8b3c;border-left: 3px solid #af8b3c;
                font-size: 8vw;
                color: #af8b3c;
                border-right: 3px solid #af8b3c;
@@ -435,8 +452,8 @@
 
             <br />
             <div style="color: #af8b3c;font-weight: 500;">
-               <div class="gloria-hallelujah-regular" style="margin-bottom: 1vw;">7 PM Onwards</div>
-                Deccan Serai Grande Hotel, 
+                <div class="gloria-hallelujah-regular" style="margin-bottom: 1vw;">7 PM Onwards</div>
+                Deccan Serai Grande Hotel,
                 <br />
                 <span style="font-size: 2vw;">Gachibowli, Hyderabad</span>
             </div>
@@ -444,8 +461,9 @@
             <div style="text-align: center; margin-top: 20px;">
                 <add-to-calendar-button name="Aadish's Birthday" options="'Apple','Google'"
                     location="Deccan Serai Grande Hotel, Hyderabad" startDate="2024-07-15" endDate="2024-07-15"
-                    startTime="19:00" endTime="23:30" timeZone="Asia/Kolkata" style="display: inline-block;"
+                    startTime="19:00" endTime="23:30" timeZone="Asia/Kolkata" style="display: inline-block;" styleLight="--font: 'Raleway', sans-serif !important;"
                     listStyle="dropdown-static" buttonStyle="round" hideBackground="true"> </add-to-calendar-button>
+                <a href="https://maps.app.goo.gl/JFDfBUNdjKPQ4hA87" class="btn">Find On Map</a>
             </div>
         </div>
         <div class="circle-big"></div>
@@ -468,15 +486,48 @@
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 <style>
+    .btn {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        align-items: center;
+        background-color: var(--btn-background);
+        border: 1px solid var(--btn-border);
+        border-radius: var(--btn-border-radius);
+        box-shadow: var(--btn-shadow);
+        color: var(--btn-text);
+        cursor: pointer;
+        display: inline-block;
+        font-family: var(--font);
+        font-size: 1em;
+        font-weight: var(--btn-font-weight);
+        justify-content: center;
+        line-height: 1.5em;
+        margin: .13em;
+        max-width: 350px;
+        padding: var(--btn-padding-y) var(--btn-padding-x);
+        position: relative;
+        text-align: center;
+        touch-action: manipulation;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        width: auto;
+        z-index: 1;
+        font-size: 16px;
 
-.raleway {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
+    }
+
+    .raleway {
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
     #atcb-bgoverlay {
         display: none;
     }
